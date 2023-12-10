@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Guardian</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>URL Guardian</h1>
+    <div id="tabs" class="tab-container">
+        <div id="currentUrlTab" class="tab-rectangle active">Current URL</div>
+        <div id="userInputTab" class="tab-rectangle">Check Any URL</div>
+        <div id="settingsTab" class="tab-rectangle">Settings</div>
+    </div>
+
+    <div id="currentUrlSection" class="section">
+        <div id="currentUrl"><strong>Current URL:</strong> <span></span></div>
+        <div id="currentUrlResults" class="results-container"></div>
+    </div>
+
+    <div id="userInputSection" class="section">
+        <h2>Check Any URL</h2>
+        <input type="text" id="urlInput" placeholder="Enter URL to check" />
+        <button id="checkUrlButton"><strong>Check URL</strong></button>
+        <div id="userUrlResults" class="results-container"></div>
+    </div>
+
+    <div id="settingsSection" class="section">
+        <div class="list-management">
+            <h2>Whitelist</h2>
+            <input type="text" id="whitelistInput" placeholder="Enter URL to whitelist">
+            <button id="addToWhitelist">Add to Whitelist</button>
+            <button id="removeFromWhitelist">Remove from Whitelist</button>
+            <ul id="whitelist"></ul>
+        </div>
+
+        <div class="list-management">
+            <h2>Blacklist</h2>
+            <input type="text" id="blacklistInput" placeholder="Enter URL to blacklist">
+            <button id="addToBlacklist">Add to Blacklist</button>
+            <button id="removeFromBlacklist">Remove from Blacklist</button>
+            <ul id="blacklist"></ul>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="tabs.js"></script>
+    <script src="settings.js"></script>
+</body>
+</html>

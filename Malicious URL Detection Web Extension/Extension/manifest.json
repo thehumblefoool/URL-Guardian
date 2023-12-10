@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "URL Guardian",
+  "version": "1.0",
+  "description": "Alerts users to potentially malicious URLs.",
+  "permissions": [
+    "tabs", 
+    "activeTab", 
+    "notifications", 
+    "scripting", 
+    "http://127.0.0.1:5000/"
+  ],
+  "action": {
+    "default_icon": "icon128.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "icon128.png"
+  }
+}

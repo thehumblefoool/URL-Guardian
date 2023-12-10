@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    width: 400px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #1a73e8;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    text-align: left;
+}
+
+#currentUrl, #urlInput {
+    background-color: #e8f0fe;
+    border-left: 4px solid #1a73e8;
+    padding: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    display: block;
+}
+
+.results-container div {
+    padding: 5px 0;
+    text-align: left;
+}
+
+.warning-message, .safe-message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.warning-message {
+    color: #D8000C;
+    background-color: #FFD2D2;
+    border-left: 4px solid #D8000C;
+}
+
+.safe-message {
+    color: #004400;
+    background-color: #DFF2BF;
+    border-left: 4px solid #60B000;
+}
+
+#userInputSection {
+    text-align: center;
+}
+
+#urlInput, #checkUrlButton {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#urlInput {
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+}
+
+#checkUrlButton {
+    width: auto;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+}
+
+#checkUrlButton:hover {
+    background-color: #185abc;
+}
+
+#currentUrlResults, #userUrlResults {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 0;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.list-management {
+    margin-bottom: 20px;
+}
+
+.list-management h2 {
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.list-management input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.list-management button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a73e8;
+    color: white;
+    cursor: pointer;
+}
+
+.list-management button:hover {
+    background-color: #185abc;
+}
+
+.list-management ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-management ul li {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.tab-container {
+    text-align: center;
+}
+
+.tab-button {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%;
+    display: inline-block;
+}
+
+.tab-button.active {
+    background-color: #fff;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.tab-container {
+    display: flex;
+    width: 100%;
+}
+
+.tab-rectangle {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.tab-rectangle.active {
+    background-color: #1a73e8;
+    color: #fff
+}

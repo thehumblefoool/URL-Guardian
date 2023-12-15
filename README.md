@@ -3,7 +3,7 @@
 To install URL Guardian, follow these steps:
 
 1. **Requirements:**
-   - Ensure you are using a Chromium-based Browser.
+   - Ensure you are using a Chromium-based Browser. NOTE: Using URL Guardian with browsers like Firefox also could work witha few tweaks to the code.
    - Have Python installed locally on your computer.
 
 2. **Unzip the Folder:**
